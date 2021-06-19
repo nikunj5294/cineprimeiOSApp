@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0A8525E0-8F3D-4EF4-99EE-B569E90AA308"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75AF4CF2-3D91-446D-A207-31144856201A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "V4 Stream/Feature/Home/View/PlayerView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "btnFullScreenAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9CE01B30-E59D-40E6-AC6F-12A3E6F10B38"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "V4 Stream/Feature/Home/View/PlayerView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "sliderValueChanged(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FBB06722-A557-4443-97AD-9BE4BBB16CD3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "V4 Stream/Resource/Alamofire.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DC0BA39A-15BD-432C-AFEA-3C2A054E8957"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "V4 Stream/Resource/Alamofire.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "DC0BA39A-15BD-432C-AFEA-3C2A054E8957 - cc1a806a038dc7d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static CINEPRIME.AlamofireModel.alamofireMethod(_: Alamofire.HTTPMethod, apiAction: CINEPRIME.APIAction, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, Header: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, is64Bit: Swift.Bool, tryAgainOnFail: Swift.Bool, isLoader: Swift.Bool, handler: (CINEPRIME.AlamofireResponse) -&gt; (), errorhandler: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "CINEPRIME"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/NishitiPhone/Movisey%2323April/V4%20Stream/Resource/Alamofire.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "244"
+                  endingLineNumber = "244"
+                  offsetFromSymbolStart = "6212">
+               </Location>
+               <Location
+                  uuid = "DC0BA39A-15BD-432C-AFEA-3C2A054E8957 - b95c28d466ce5ba2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Value Promoted from Box, Arg[3] = Value Promoted from Box&gt; of closure #2 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in static CINEPRIME.AlamofireModel.alamofireMethod(_: Alamofire.HTTPMethod, apiAction: CINEPRIME.APIAction, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;, Header: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, is64Bit: Swift.Bool, tryAgainOnFail: Swift.Bool, isLoader: Swift.Bool, handler: (CINEPRIME.AlamofireResponse) -&gt; (), errorhandler: (Swift.Error) -&gt; ()) -&gt; ()"
+                  moduleName = "CINEPRIME"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/NishitiPhone/Movisey%2323April/V4%20Stream/Resource/Alamofire.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "154"
+                  endingLineNumber = "154"
+                  offsetFromSymbolStart = "432">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9429C32-29B7-4C84-A898-6783CFB25AA9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "V4 Stream/Resource/Alamofire.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CB3E53B-0940-4B6E-AA8D-92B7C5A9B3D0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "V4 Stream/Resource/Alamofire.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

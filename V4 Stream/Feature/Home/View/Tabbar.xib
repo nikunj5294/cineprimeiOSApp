@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmazonEmberDisplay_Bd.otf">
+            <string>AmazonEmberDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTabbarController" customModule="CINEPRIME" customModuleProvider="target">
+            <connections>
+                <outlet property="btnHome" destination="qbF-sP-XcV" id="OzZ-5e-IhR"/>
+                <outlet property="btnMore" destination="04C-so-Pni" id="wKK-rf-kSI"/>
+                <outlet property="btnMovie" destination="u3M-nm-HlU" id="Sae-Oa-EuL"/>
+                <outlet property="btnSeries" destination="qYZ-FJ-gxS" id="Akk-Cd-sOL"/>
+                <outlet property="imgHome" destination="cPL-ke-4S8" id="5SD-nK-H7f"/>
+                <outlet property="imgMore" destination="bNi-hp-MUs" id="cM9-ZA-CF2"/>
+                <outlet property="imgMovie" destination="yjn-OR-cHC" id="4yd-st-yqc"/>
+                <outlet property="imgSeries" destination="beo-VJ-BkR" id="cer-Oc-MeH"/>
+                <outlet property="lblHome" destination="Ho0-FE-Bv9" id="O5Q-hv-nOh"/>
+                <outlet property="lblMore" destination="xKO-94-A2z" id="pyD-do-Ek7"/>
+                <outlet property="lblMovie" destination="pp2-TR-FvY" id="Ipk-wW-Y1Z"/>
+                <outlet property="lblSeries" destination="Uia-eF-fjh" id="kAE-no-ZIk"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ERR-cx-FBC"/>
+                <outlet property="viewHome" destination="qbF-sP-XcV" id="78T-ca-hvO"/>
+                <outlet property="viewMore" destination="04C-so-Pni" id="Joo-p6-lKV"/>
+                <outlet property="viewMovie" destination="u3M-nm-HlU" id="eaM-S1-NEy"/>
+                <outlet property="viewSeries" destination="qYZ-FJ-gxS" id="v0e-W7-tIb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MenuHeader" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="535" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWq-bK-QVz">
+                    <rect key="frame" x="0.0" y="0.0" width="535" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DVE-vR-Czv">
+                            <rect key="frame" x="0.0" y="0.0" width="535" height="50"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APX-T8-lpq" userLabel="View1">
+                                    <rect key="frame" x="0.0" y="0.0" width="134" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home" translatesAutoresizingMaskIntoConstraints="NO" id="cPL-ke-4S8">
+                                            <rect key="frame" x="57" y="10" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="7oB-eB-ieY"/>
+                                                <constraint firstAttribute="height" constant="20" id="z3e-6P-P9b"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho0-FE-Bv9">
+                                            <rect key="frame" x="0.0" y="33.5" width="134" height="14.5"/>
+                                            <fontDescription key="fontDescription" name="AmazonEmberDisplay-Bold" family="Amazon Ember Display" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbF-sP-XcV">
+                                            <rect key="frame" x="0.0" y="0.0" width="134" height="50"/>
+                                            <connections>
+                                                <action selector="btnTabClick:" destination="-1" eventType="touchUpInside" id="pYh-HF-RFZ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="cPL-ke-4S8" firstAttribute="centerY" secondItem="APX-T8-lpq" secondAttribute="centerY" constant="-5" id="8Qk-Dk-tei"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ho0-FE-Bv9" secondAttribute="trailing" id="LZI-gU-lrO"/>
+                                        <constraint firstItem="qbF-sP-XcV" firstAttribute="leading" secondItem="APX-T8-lpq" secondAttribute="leading" id="MZY-J0-ZGT"/>
+                                        <constraint firstAttribute="trailing" secondItem="qbF-sP-XcV" secondAttribute="trailing" id="Ms6-i6-SMI"/>
+                                        <constraint firstAttribute="bottom" secondItem="qbF-sP-XcV" secondAttribute="bottom" id="NcQ-Dd-ZUP"/>
+                                        <constraint firstItem="Ho0-FE-Bv9" firstAttribute="leading" secondItem="APX-T8-lpq" secondAttribute="leading" id="V45-gO-INh"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ho0-FE-Bv9" secondAttribute="bottom" constant="2" id="dmY-7Z-jfS"/>
+                                        <constraint firstItem="cPL-ke-4S8" firstAttribute="centerX" secondItem="APX-T8-lpq" secondAttribute="centerX" id="e3O-W4-bxU"/>
+                                        <constraint firstItem="qbF-sP-XcV" firstAttribute="top" secondItem="APX-T8-lpq" secondAttribute="top" id="fvM-e5-BUT"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X40-E9-SGD" userLabel="View4">
+                                    <rect key="frame" x="134" y="0.0" width="133.5" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watchlist64" translatesAutoresizingMaskIntoConstraints="NO" id="beo-VJ-BkR">
+                                            <rect key="frame" x="56.5" y="10" width="20" height="20"/>
+                                            <color key="tintColor" red="0.82352948189999997" green="0.37254902719999999" blue="0.1019607931" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="0wl-I4-14s"/>
+                                                <constraint firstAttribute="width" constant="20" id="ayM-Bs-IVB"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WatchList" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uia-eF-fjh">
+                                            <rect key="frame" x="0.0" y="33.5" width="133.5" height="14.5"/>
+                                            <fontDescription key="fontDescription" name="AmazonEmberDisplay-Bold" family="Amazon Ember Display" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYZ-FJ-gxS">
+                                            <rect key="frame" x="0.0" y="0.0" width="133.5" height="50"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="btnTabClick:" destination="-1" eventType="touchUpInside" id="g14-Gh-xWh"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="qYZ-FJ-gxS" firstAttribute="leading" secondItem="X40-E9-SGD" secondAttribute="leading" id="Txo-nJ-IC4"/>
+                                        <constraint firstItem="beo-VJ-BkR" firstAttribute="centerX" secondItem="X40-E9-SGD" secondAttribute="centerX" id="UBd-JX-V3t"/>
+                                        <constraint firstItem="beo-VJ-BkR" firstAttribute="centerY" secondItem="X40-E9-SGD" secondAttribute="centerY" constant="-5" id="ZCe-Yc-YhG"/>
+                                        <constraint firstItem="qYZ-FJ-gxS" firstAttribute="top" secondItem="X40-E9-SGD" secondAttribute="top" id="biY-SG-2Zx"/>
+                                        <constraint firstAttribute="trailing" secondItem="qYZ-FJ-gxS" secondAttribute="trailing" id="iOG-Zx-9ls"/>
+                                        <constraint firstAttribute="trailing" secondItem="Uia-eF-fjh" secondAttribute="trailing" id="nh4-3J-F1U"/>
+                                        <constraint firstItem="Uia-eF-fjh" firstAttribute="leading" secondItem="X40-E9-SGD" secondAttribute="leading" id="qrW-Dt-XF2"/>
+                                        <constraint firstAttribute="bottom" secondItem="Uia-eF-fjh" secondAttribute="bottom" constant="2" id="rlC-G4-5QS"/>
+                                        <constraint firstAttribute="bottom" secondItem="qYZ-FJ-gxS" secondAttribute="bottom" id="xUZ-8i-8mI"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFi-2q-fB1" userLabel="View5">
+                                    <rect key="frame" x="267.5" y="0.0" width="134" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloads" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKO-94-A2z">
+                                            <rect key="frame" x="0.0" y="33.5" width="134" height="14.5"/>
+                                            <fontDescription key="fontDescription" name="AmazonEmberDisplay-Bold" family="Amazon Ember Display" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download64" translatesAutoresizingMaskIntoConstraints="NO" id="bNi-hp-MUs">
+                                            <rect key="frame" x="57" y="10" width="20" height="20"/>
+                                            <color key="tintColor" red="0.82352948189999997" green="0.37254902719999999" blue="0.1019607931" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="UuN-jx-ggp"/>
+                                                <constraint firstAttribute="width" constant="20" id="yfZ-S8-SB6"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04C-so-Pni">
+                                            <rect key="frame" x="0.0" y="0.0" width="134" height="50"/>
+                                            <connections>
+                                                <action selector="btnTabClick:" destination="-1" eventType="touchUpInside" id="iqx-qG-hhg"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="04C-so-Pni" firstAttribute="top" secondItem="tFi-2q-fB1" secondAttribute="top" id="8fc-cY-JSH"/>
+                                        <constraint firstAttribute="trailing" secondItem="xKO-94-A2z" secondAttribute="trailing" id="Gd9-RH-qbF"/>
+                                        <constraint firstItem="bNi-hp-MUs" firstAttribute="centerX" secondItem="tFi-2q-fB1" secondAttribute="centerX" id="HYI-Ts-XNf"/>
+                                        <constraint firstAttribute="bottom" secondItem="04C-so-Pni" secondAttribute="bottom" id="KUs-Sf-lhd"/>
+                                        <constraint firstItem="xKO-94-A2z" firstAttribute="leading" secondItem="tFi-2q-fB1" secondAttribute="leading" id="T84-Ng-fLa"/>
+                                        <constraint firstItem="bNi-hp-MUs" firstAttribute="centerY" secondItem="tFi-2q-fB1" secondAttribute="centerY" constant="-5" id="Xbn-YK-b2O"/>
+                                        <constraint firstItem="04C-so-Pni" firstAttribute="leading" secondItem="tFi-2q-fB1" secondAttribute="leading" id="cTD-i2-iw0"/>
+                                        <constraint firstAttribute="bottom" secondItem="xKO-94-A2z" secondAttribute="bottom" constant="2" id="cvG-Wc-xrd"/>
+                                        <constraint firstAttribute="trailing" secondItem="04C-so-Pni" secondAttribute="trailing" id="yUM-3A-p8m"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACp-gO-3qz" userLabel="View2">
+                                    <rect key="frame" x="401.5" y="0.0" width="133.5" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_movie" translatesAutoresizingMaskIntoConstraints="NO" id="yjn-OR-cHC">
+                                            <rect key="frame" x="56.5" y="10" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="4DV-Ze-ccb"/>
+                                                <constraint firstAttribute="width" constant="20" id="Gay-TZ-1NB"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pp2-TR-FvY">
+                                            <rect key="frame" x="0.0" y="33.5" width="133.5" height="14.5"/>
+                                            <fontDescription key="fontDescription" name="AmazonEmberDisplay-Bold" family="Amazon Ember Display" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3M-nm-HlU">
+                                            <rect key="frame" x="0.0" y="0.0" width="133.5" height="50"/>
+                                            <connections>
+                                                <action selector="btnTabClick:" destination="-1" eventType="touchUpInside" id="iqf-lC-Ygq"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="pp2-TR-FvY" secondAttribute="trailing" id="0zk-hs-rTo"/>
+                                        <constraint firstItem="pp2-TR-FvY" firstAttribute="leading" secondItem="ACp-gO-3qz" secondAttribute="leading" id="G2Z-eN-Lwd"/>
+                                        <constraint firstItem="yjn-OR-cHC" firstAttribute="centerX" secondItem="ACp-gO-3qz" secondAttribute="centerX" id="MLU-3U-fy2"/>
+                                        <constraint firstAttribute="trailing" secondItem="u3M-nm-HlU" secondAttribute="trailing" id="NcJ-DP-3Fp"/>
+                                        <constraint firstItem="u3M-nm-HlU" firstAttribute="leading" secondItem="ACp-gO-3qz" secondAttribute="leading" id="Xp8-Eh-2yt"/>
+                                        <constraint firstAttribute="bottom" secondItem="pp2-TR-FvY" secondAttribute="bottom" constant="2" id="fSV-l1-d20"/>
+                                        <constraint firstItem="yjn-OR-cHC" firstAttribute="centerY" secondItem="ACp-gO-3qz" secondAttribute="centerY" constant="-5" id="gJK-NW-CVY"/>
+                                        <constraint firstAttribute="bottom" secondItem="u3M-nm-HlU" secondAttribute="bottom" id="mE9-DE-lR1"/>
+                                        <constraint firstItem="u3M-nm-HlU" firstAttribute="top" secondItem="ACp-gO-3qz" secondAttribute="top" id="yNr-O2-wIp"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="DVE-vR-Czv" secondAttribute="trailing" id="9o6-64-ned"/>
+                        <constraint firstItem="DVE-vR-Czv" firstAttribute="leading" secondItem="pWq-bK-QVz" secondAttribute="leading" id="OlO-Gk-N8X"/>
+                        <constraint firstAttribute="bottom" secondItem="DVE-vR-Czv" secondAttribute="bottom" id="d0R-UQ-pVt"/>
+                        <constraint firstItem="DVE-vR-Czv" firstAttribute="top" secondItem="pWq-bK-QVz" secondAttribute="top" id="h6e-RA-bCu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pWq-bK-QVz" secondAttribute="trailing" id="IHD-TC-mJx"/>
+                <constraint firstItem="pWq-bK-QVz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LMt-zp-3r9"/>
+                <constraint firstItem="pWq-bK-QVz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aB1-l9-xZk"/>
+                <constraint firstAttribute="bottom" secondItem="pWq-bK-QVz" secondAttribute="bottom" id="wJb-gz-ym0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="228.2608695652174" y="132.58928571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="download64" width="32" height="32"/>
+        <image name="ic_home" width="32" height="32"/>
+        <image name="ic_movie" width="32" height="32"/>
+        <image name="watchlist64" width="32" height="32"/>
+    </resources>
+</document>

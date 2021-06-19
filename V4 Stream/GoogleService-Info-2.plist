@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1045034651503-gh3phulkmmdfe2aq5f4hhpik3gde8jm8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1045034651503-gh3phulkmmdfe2aq5f4hhpik3gde8jm8</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1045034651503-1v4c2qi044ne2483r1ndg4r6uo60ub6b.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDz8MFpB1bF_ZpCjqg1FSYBpHUlfkebuOk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1045034651503</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.CinePrime</string>
+	<key>PROJECT_ID</key>
+	<string>cineprime-563f1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cineprime-563f1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1045034651503:ios:d33d61f45a95c940aa229a</string>
+</dict>
+</plist>
