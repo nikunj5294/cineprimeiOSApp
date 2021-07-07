@@ -22,6 +22,7 @@ class PurchaseSubscriptionVC: UIViewController {
     
     @IBOutlet weak var lblPhoneNumber: UILabel!
     
+    @IBOutlet weak var lblInAppPurchaseMetaData: UILabel!
     
     @IBOutlet weak var btnChangePlan: UIButton!
     
@@ -50,6 +51,10 @@ class PurchaseSubscriptionVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblInAppPurchaseMetaData.text = "* Payment will be charged to iTunes Account on purchase confirmation.\n* Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period.\n"
+        
+        
 //        razorpay = RazorpayCheckout.initWithKey(razorpayTestKey, andDelegate: self)
         let firstString = NSMutableAttributedString(string: "You have selected ", attributes: regularTextAttribute)
         let secondString = NSMutableAttributedString(string: selectedPlan.plan_name, attributes: redTextAttribute)
