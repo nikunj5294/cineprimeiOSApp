@@ -22,6 +22,7 @@ class ProfileVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.txtMobile.isUserInteractionEnabled = false
         self.txtPassword.isUserInteractionEnabled = false
         self.setPlaceHolder()
         self.APIProfile()

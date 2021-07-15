@@ -7,64 +7,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "468E9340-71E0-4C94-AA88-C6DDE8C8B1CD"
+            uuid = "8D855415-6AED-4346-B2C1-EEB56AEC4579"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "V4 Stream/Feature/Home/Controller/MovieDetailVC.swift"
+            filePath = "V4 Stream/Feature/Home/View/PlayerView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "isTrailer"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "022A8187-68F4-43D8-9BF3-E6A66224B590"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "V4 Stream/Feature/Home/View/PlayerView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "369"
             endingLineNumber = "369"
-            landmarkName = "APICheckUserPlan()"
+            landmarkName = "startEpisode(videoUrl:languages:resolutions:time:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3FF39AD8-BFA3-490A-8B76-74AC9AA0668D"
+            uuid = "6D49E95E-C9D4-434C-B85D-7C6144C2A024"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "V4 Stream/Feature/Home/Controller/MovieDetailVC.swift"
+            filePath = "V4 Stream/Feature/Home/View/PlayerView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "viewWillDisappear(_:)"
+            startingLineNumber = "377"
+            endingLineNumber = "377"
+            landmarkName = "startEpisode(videoUrl:languages:resolutions:time:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A20B05FE-EA95-4D60-ADC8-DE2F66DA3EF6"
+            uuid = "6793D0F2-044F-4137-8B5A-6F1D7CF13C18"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "V4 Stream/Feature/Home/Controller/MovieDetailVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "viewDidDisappear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "09D5D600-F38B-4F1C-A551-C8F85C2550D6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "V4 Stream/Feature/Home/Controller/MovieDetailVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "viewDidAppear(_:)"
+            startingLineNumber = "510"
+            endingLineNumber = "510"
+            landmarkName = "setData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

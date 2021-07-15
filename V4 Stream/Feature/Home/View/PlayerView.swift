@@ -52,6 +52,12 @@ class PlayerView: UIView {
     var timer : Timer? = nil
     var avPlayer: AVPlayer?
     var avPlayerLayer: AVPlayerLayer?
+    var isTrailer: Bool = false {
+        didSet {
+            self.imgSettings.isHidden = isTrailer
+            self.btnSettings.isHidden = isTrailer
+        }
+    }
     @IBOutlet weak var imgFullScreen: UIImageView!
     @IBOutlet weak var btnFullScreen: UIButton!
     var videoPlayerItem: AVPlayerItem? = nil {
@@ -83,7 +89,6 @@ class PlayerView: UIView {
             self.optionViewWidthObj.constant = UIScreen.main.bounds.width
             self.ViewPlayerContainerWidthObj.constant = self.optionViewWidthObj.constant
         }
-        
         
     }
     
@@ -360,10 +365,21 @@ class PlayerView: UIView {
         self.languages = languages
         self.resolutions = resolutions
         if languages.count == 0 && resolutions.count == 0 {
-            self.imgSettings.isHidden = true
+            if isTrailer{
+                self.imgSettings.isHidden = true
+            }else{
+                self.imgSettings.isHidden = true
+            }
+            self.btnSettings.isHidden = true
             self.btnSettings.isUserInteractionEnabled = false
         } else {
-            self.imgSettings.isHidden = false
+            if isTrailer{
+                self.imgSettings.isHidden = true
+                self.btnSettings.isHidden = true
+            }else{
+                self.imgSettings.isHidden = false
+            }
+            
             self.btnSettings.isUserInteractionEnabled = true
         }
         if let url = URL(string: videoURL){

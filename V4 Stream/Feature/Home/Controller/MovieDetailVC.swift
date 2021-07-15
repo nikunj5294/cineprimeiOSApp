@@ -507,6 +507,19 @@ extension MovieDetailVC : UICollectionViewDelegate,UICollectionViewDataSource,
     
     func setData() {
         
+        if self.movieDetail.trailer_url.count == 0
+        {
+            viewtrailer.isHidden = true
+            viewPlayerContainer.isTrailer = false
+        }else{
+            viewPlayerContainer.isTrailer = true
+        }
+        if self.movieDetail.Movie_cast.count == 0
+        {
+            viewmoviecast.isHidden = true
+        }
+        
+        
         self.clnMovie.reloadData()
         self.clncelebraties.reloadData()
         self.clntrailers.reloadData()
@@ -527,15 +540,7 @@ extension MovieDetailVC : UICollectionViewDelegate,UICollectionViewDataSource,
 //            self.lblGenre.text = "-"
 //        }
 //        
-        if self.movieDetail.trailer_url.count == 0
-        {
-            viewtrailer.isHidden = true
-        }
-        if self.movieDetail.Movie_cast.count == 0
-        {
-            viewmoviecast.isHidden = true
-        }
-        
+       
         self.lblLanguage.text = self.movieDetail.language_name
         
         let height = getHeight(text: self.movieDetail.description.html2String.description as NSString , width: self.lblDescription.frame.size.width, font: self.lblDescription.font)
