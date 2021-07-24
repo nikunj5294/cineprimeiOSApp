@@ -29,6 +29,8 @@
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.CinePrime</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>com.googleusercontent.apps.627517509507-t4chftr7fkr4k37ftpnfaokaqip81m79</string>
@@ -47,6 +49,8 @@
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.CinePrime</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>com.googleusercontent.apps.1045034651503-gh3phulkmmdfe2aq5f4hhpik3gde8jm8</string>

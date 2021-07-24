@@ -190,7 +190,6 @@ class LoginVC: UIViewController,GIDSignInDelegate {
     }
     @IBAction func btnGoogleLogin(_ sender: UIButton)
     {
-    
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance().signIn()
         GIDSignIn.sharedInstance()?.delegate = self

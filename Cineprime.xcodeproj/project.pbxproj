@@ -1362,7 +1362,7 @@
 		DACB913924BD5B8800C2AB66 = {
 			isa = PBXGroup;
 			children = (
-				DACB914424BD5B8800C2AB66 /* V4 Stream */,
+				DACB914424BD5B8800C2AB66 /* Cineprime */,
 				DACB914324BD5B8800C2AB66 /* Products */,
 				565883797EAD0E395EBB1DF6 /* Pods */,
 				914CE44BCE98482B2040BE23 /* Frameworks */,
@@ -1377,7 +1377,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DACB914424BD5B8800C2AB66 /* V4 Stream */ = {
+		DACB914424BD5B8800C2AB66 /* Cineprime */ = {
 			isa = PBXGroup;
 			children = (
 				76ECB64C262AB46200BD2E8A /* CINEPRIME.entitlements */,
@@ -1395,7 +1395,7 @@
 				DACB914E24BD5B8A00C2AB66 /* LaunchScreen.storyboard */,
 				DACB915124BD5B8A00C2AB66 /* Info.plist */,
 			);
-			path = "V4 Stream";
+			path = Cineprime;
 			sourceTree = "<group>";
 		};
 		DACB915724BD5C2800C2AB66 /* Resource */ = {
@@ -1448,9 +1448,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DACB914124BD5B8800C2AB66 /* V4 Stream */ = {
+		DACB914124BD5B8800C2AB66 /* Cineprime */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DACB915424BD5B8A00C2AB66 /* Build configuration list for PBXNativeTarget "V4 Stream" */;
+			buildConfigurationList = DACB915424BD5B8A00C2AB66 /* Build configuration list for PBXNativeTarget "Cineprime" */;
 			buildPhases = (
 				4507931D98B14785FABEDE60 /* [CP] Check Pods Manifest.lock */,
 				DACB913E24BD5B8800C2AB66 /* Sources */,
@@ -1463,7 +1463,7 @@
 			);
 			dependencies = (
 			);
-			name = "V4 Stream";
+			name = Cineprime;
 			productName = "V4 Stream";
 			productReference = DACB914224BD5B8800C2AB66 /* CINEPRIME.app */;
 			productType = "com.apple.product-type.application";
@@ -1483,7 +1483,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DACB913D24BD5B8800C2AB66 /* Build configuration list for PBXProject "V4 Stream" */;
+			buildConfigurationList = DACB913D24BD5B8800C2AB66 /* Build configuration list for PBXProject "Cineprime" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1496,7 +1496,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DACB914124BD5B8800C2AB66 /* V4 Stream */,
+				DACB914124BD5B8800C2AB66 /* Cineprime */,
 			);
 		};
 /* End PBXProject section */
@@ -2107,12 +2107,12 @@
 			baseConfigurationReference = 8283305B2468163E6FEDF50B /* Pods-V4 Stream.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "V4 Stream/CINEPRIME.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Cineprime/CINEPRIME.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 5SMNANBA99;
-				INFOPLIST_FILE = "V4 Stream/Info.plist";
+				INFOPLIST_FILE = Cineprime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2123,7 +2123,7 @@
 				PRODUCT_MODULE_NAME = CINEPRIME;
 				PRODUCT_NAME = CINEPRIME;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/V4 Stream/CINEPRIME-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/Cineprime/CINEPRIME-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -2134,12 +2134,12 @@
 			baseConfigurationReference = 5158BD61C93F872DF10C693F /* Pods-V4 Stream.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "V4 Stream/CINEPRIME.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Cineprime/CINEPRIME.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 5SMNANBA99;
-				INFOPLIST_FILE = "V4 Stream/Info.plist";
+				INFOPLIST_FILE = Cineprime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2150,7 +2150,7 @@
 				PRODUCT_MODULE_NAME = CINEPRIME;
 				PRODUCT_NAME = CINEPRIME;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/V4 Stream/CINEPRIME-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/Cineprime/CINEPRIME-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -2159,7 +2159,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DACB913D24BD5B8800C2AB66 /* Build configuration list for PBXProject "V4 Stream" */ = {
+		DACB913D24BD5B8800C2AB66 /* Build configuration list for PBXProject "Cineprime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DACB915224BD5B8A00C2AB66 /* Debug */,
@@ -2168,7 +2168,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DACB915424BD5B8A00C2AB66 /* Build configuration list for PBXNativeTarget "V4 Stream" */ = {
+		DACB915424BD5B8A00C2AB66 /* Build configuration list for PBXNativeTarget "Cineprime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DACB915524BD5B8A00C2AB66 /* Debug */,

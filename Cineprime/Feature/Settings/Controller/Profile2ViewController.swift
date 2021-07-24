@@ -16,6 +16,9 @@ class Profile2ViewController: UIViewController {
         super.viewDidLoad()
         btnEdit.layer.cornerRadius = 8.0
         btnEdit.clipsToBounds = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         self.APIProfile()
     }
     

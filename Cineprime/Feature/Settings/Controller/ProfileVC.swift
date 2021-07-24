@@ -45,6 +45,7 @@ class ProfileVC: UIViewController {
        // self.pickPhoto()
     }
     @IBAction func btnSaveAction(_ sender: UIButton) {
+        self.view.endEditing(true)
         if self.validation() {
             self.APIEditProfile()
         }
@@ -176,6 +177,11 @@ extension ProfileVC {
             self.txtName.text = strFromJSON(data["name"])
             self.txtMobile.text = strFromJSON(data["phone"])
             self.txtPassword.text = "*******"
+            
+            if self.txtMobile.text?.count == 0{
+                self.txtMobile.isUserInteractionEnabled = true
+            }
+            
           //  let user_image = strFromJSON(data["user_image"])
            // self.imgProfile.sd_setImage(with: URL(string: user_image), placeholderImage: UIImage(named: "ic_profile_sd"))
             
@@ -210,8 +216,30 @@ extension ProfileVC {
         }
         
         AlamofireModel.alamofireMethodWithImages(.post, apiAction: .profile_update, parameters: param, Header: [:], images: images, handler: {res in
+            print(res.json)
+//            if strFromJSON(res.originalJSON["status_code"]) == "200" {
+//                print(res.json)
+//            } else {
+//
+//                let json = res.originalJSON["VIDEO_STREAMING_APP"][0]
+//
+//            }
             
+            kCurrentUser.name = self.txtName.text ?? ""
+            kCurrentUser.phone = self.txtMobile.text ?? ""
             
+            var dict : [String : Any] = [String : Any]()
+
+            dict["user_id"] = kCurrentUser.user_id
+            dict["phone"] = kCurrentUser.phone
+            dict["name"] = kCurrentUser.name
+            dict["user_image"] = kCurrentUser.user_image
+            
+            UserDefaults.standard.set(dict, forKey: "userDeafultKey")
+            UserDefaults.standard.synchronize()
+            
+            let json = res.originalJSON["VIDEO_STREAMING_APP"][0]
+            Utilities.showMessages(message: strFromJSON(json["msg"]))
         }, errorhandler: {error in
             
         })

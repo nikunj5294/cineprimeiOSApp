@@ -53,74 +53,94 @@ class SubscripionPlanVC: UIViewController {
     
     @objc func btnProceedAction(_ sender: UIButton)
     {
-        if self.current_plan != subscription.list[sender.tag].plan_name
-        {
-            self.selectedPlan = subscription.list[sender.tag]
-        } else {
-            Utilities.showMessages(message: "You have purchased this plan")
-            return
-        }
-        if self.selectedPlan.plan_id != "" {
-  
-            let resultVC: PurchaseSubscriptionVC = Utilities.viewController(name: "PurchaseSubscriptionVC", storyboard: "Settings") as! PurchaseSubscriptionVC
+        
+        if kCurrentUser.name.count == 0 || kCurrentUser.phone.count == 0{
             
-            if selectedPlan.plan_name.uppercased() == "V4 STREAM PREMIUM"
-            {
-                resultVC.promocode = Utilities.trim(self.promocode)
+            let alertObj = UIAlertController(title: "CINEPRIME", message: "Please complete your profile before purchase the plan", preferredStyle: .alert)
+            
+            let action1 = UIAlertAction(title: "Ok", style: .default) { (action) in
+                let resultVC : ProfileVC = Utilities.viewController(name: "ProfileVC", storyboard: "Settings") as! ProfileVC
+                self.navigationController?.pushViewController(resultVC, animated: false)
             }
-            resultVC.selectedPlan = self.selectedPlan
             
-            if(self.IAproducts.count > 0)
+            let action2 = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+                alertObj.dismiss(animated: true, completion: nil)
+            }
+            
+            alertObj.addAction(action2)
+            alertObj.addAction(action1)
+            self.present(alertObj, animated: true, completion: nil)
+            
+        }else{
+            
+            if self.current_plan != subscription.list[sender.tag].plan_name
             {
-                if (self.selectedPlan.plan_id == "1")//yearly
-                {
-                    resultVC.SelectedIAProduct = self.IAproducts[0]
-                    for prod1 in self.IAproducts
-                    {
-                        if(prod1.productIdentifier == CinePrimeProducts.Pyearly)
-                        {
-                            resultVC.SelectedIAProduct = prod1
-                            break
-                        }
-                    }
-                }
-                else if(self.selectedPlan.plan_id == "2")//halfyearly
-                {
-                    for prod1 in self.IAproducts
-                    {
-                        if(prod1.productIdentifier == CinePrimeProducts.PhalfYearly)
-                        {
-                            resultVC.SelectedIAProduct = prod1
-                            break
-                        }
-                    }
-                }
-                else if(self.selectedPlan.plan_id == "3")//quarterly
-                {
-                    for prod1 in self.IAproducts
-                    {
-                        if(prod1.productIdentifier == CinePrimeProducts.Pquarterly)
-                        {
-                            resultVC.SelectedIAProduct = prod1
-                            break
-                        }
-                    }
-                }
-                                
-                print("Promocode --------",self.promocode)
-                print("SelectedIAProduct --------",resultVC.SelectedIAProduct.productIdentifier)
+                self.selectedPlan = subscription.list[sender.tag]
+            } else {
+                Utilities.showMessages(message: "You have purchased this plan")
+                return
+            }
+            if self.selectedPlan.plan_id != "" {
+      
+                let resultVC: PurchaseSubscriptionVC = Utilities.viewController(name: "PurchaseSubscriptionVC", storyboard: "Settings") as! PurchaseSubscriptionVC
                 
-                self.navigationController?.pushViewController(resultVC, animated: true)
-            }
-            else
-            {
-                AppInstance.showMessages(message: "Cant find Products From App Store")
-            }
+                if selectedPlan.plan_name.uppercased() == "V4 STREAM PREMIUM"
+                {
+                    resultVC.promocode = Utilities.trim(self.promocode)
+                }
+                resultVC.selectedPlan = self.selectedPlan
+                
+                if(self.IAproducts.count > 0)
+                {
+                    if (self.selectedPlan.plan_id == "1")//yearly
+                    {
+                        resultVC.SelectedIAProduct = self.IAproducts[0]
+                        for prod1 in self.IAproducts
+                        {
+                            if(prod1.productIdentifier == CinePrimeProducts.Pyearly)
+                            {
+                                resultVC.SelectedIAProduct = prod1
+                                break
+                            }
+                        }
+                    }
+                    else if(self.selectedPlan.plan_id == "2")//halfyearly
+                    {
+                        for prod1 in self.IAproducts
+                        {
+                            if(prod1.productIdentifier == CinePrimeProducts.PhalfYearly)
+                            {
+                                resultVC.SelectedIAProduct = prod1
+                                break
+                            }
+                        }
+                    }
+                    else if(self.selectedPlan.plan_id == "3")//quarterly
+                    {
+                        for prod1 in self.IAproducts
+                        {
+                            if(prod1.productIdentifier == CinePrimeProducts.Pquarterly)
+                            {
+                                resultVC.SelectedIAProduct = prod1
+                                break
+                            }
+                        }
+                    }
+                                    
+                    print("Promocode --------",self.promocode)
+                    print("SelectedIAProduct --------",resultVC.SelectedIAProduct.productIdentifier)
+                    
+                    self.navigationController?.pushViewController(resultVC, animated: true)
+                }
+                else
+                {
+                    AppInstance.showMessages(message: "Cant find Products From App Store")
+                }
 
-        } else {
-            AppInstance.showMessages(message: "Please select plan")
+            } else {
+                AppInstance.showMessages(message: "Please select plan")
+            }
         }
-
     }
 
 }
